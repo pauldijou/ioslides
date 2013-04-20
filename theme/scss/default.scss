@@ -170,19 +170,17 @@ slides > slide {
     //background: white url(../../images/google_developers_icon_128.png) ($brand-small-icon-size * 2) 98% no-repeat;
     //@include background-size($brand-small-icon-size $brand-small-icon-size);
 
-    &:before {
+    &::before {
       font-size: 12pt;
-      content: $social-tags;
       position: absolute;
       bottom: $slide-top-bottom-padding / 2;
       left: $slide-left-right-padding;
-      background: url(../../images/logo-zen.png) no-repeat 0 50%;
       @include background-size($brand-small-icon-size $brand-small-icon-size);
       padding-left: $brand-small-icon-size + 10;
       height: $brand-small-icon-size;
       line-height: $brand-small-icon-size;
     }
-    &:after {
+    &::after {
       font-size: 12pt;
       content: attr(data-slide-num) '/' attr(data-total-slides);
       position: absolute;
@@ -193,7 +191,7 @@ slides > slide {
   }
 
   &.title-slide {
-    &:after {
+    &::after {
       content: '';
       //background: url(../../images/io2012_logo.png) no-repeat 100% 50%;
       @include background-size(contain);
@@ -210,7 +208,7 @@ slides > slide {
     display: block !important;
     @include backdrop;
 
-    &:after, &:before {
+    &::after, &::before {
       display: none; // Prevent double set of slide nums and footer icons.
     }
   }
@@ -841,13 +839,6 @@ article.smaller {
 }
 
 /* ===== SLIDE CONTENT ===== */
-.logoslide {
-  img {
-    width: 393px;
-    height: 196px;
-  }
-}
-
 .segue {
   padding: $slide-left-right-padding $slide-left-right-padding * 2;
 
