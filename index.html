@@ -1,0 +1,258 @@
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mushrooms</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="logoslide nobackground">
+    <article class="flexbox vcenter">
+      <span><img src="images/logo-zen-big.png"></span>
+    </article>
+  </slide>
+
+  <slide class="title-slide segue nobackground">
+    <aside class="gdbar"><img src="images/logo-zen.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>What I want</h2>
+    </hgroup>
+    <article>
+      <ul class="build unstyled" style="color:white;">
+        <li><img src="images/sass-less-stylus.jpg" style="position:absolute;top:-110px;right:0px;" /></li>
+        <li><img src="images/coffeescript_logo.png" style="position:absolute;top:300px;right:50px;" /></li>
+        <li><img src="images/typescript.png" style="position:absolute;top:450px;right:100px;" /></li>
+        <li><img src="images/file-settings.png" style="position:absolute;top:-40px;left:-75px;width:250px;" /></li>
+        <li><img src="images/jasmine.png" style="position:absolute;top:100px;right:0px;" /></li>
+        <li><img src="images/dependency-tree.png" style="position:absolute;top:180px;left:-60px;width:350px;" /></li>
+        <li><img src="images/continuous-integration-graphic-091812.png" style="position:absolute;top:70px;left:280px;" /></li>
+        <li><div style="position:absolute;top:137px;left:327px;color: white;background-color: #8b0000;font-size: 16px;font-weight: bold;text-align: center;padding: 5px;-webkit-transform: rotate(-45deg);">SAVE FILE</div></li>
+        <li><img src="images/LiveReload_350.png" style="position:absolute;top:160px;left:370px;width:200px;" /></li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>What Play! framework has</h2>
+    </hgroup>
+    <article>
+      <ul class="build unstyled" style="color:white;">
+        <li><img src="images/less-css-logo.png" style="position:absolute;top:-50px;left:50px;" /></li>
+        <li><img src="images/coffeescript_logo.png" style="position:absolute;top:0px;right:200px;" /></li>
+        <li><img src="images/closure_profile.png" style="position:absolute;top:160px;left:30px;width: 300px;" /></li>
+        <li><img src="images/dtaf5.jpg" style="position:absolute;top:170px;right:100px;" /></li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/logo-zen.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Here come the challengers!!</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Modern tools</h2>
+    </hgroup>
+    <article>
+      <ul class="build unstyled">
+        <li style="line-height: 150px;vertical-align: middle;"><img src="images/yeoman.png" style="width:150px;float: left;clip:rect(0px, 0px, 30px, 0px);"/><span>Yeoman: bootstrap application</span></li>
+        <li style="line-height: 150px;vertical-align: middle;"><img src="images/bower.png" style="width:150px;float: left;"/><span>Bower: JavaScript dependencies management</span></li>
+        <li style="line-height: 150px;vertical-align: middle;"><img src="images/grunt.png" style="width:150px;float: left;"/><span>Grunt: do everything else in the universe</span></li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Yeoman</h2>
+    </hgroup>
+    <article class="smaller" style="position: relative;top: -45px;">
+      <pre class="prettyprint lang-sh" data-lang="shell">
+$ yo webapp
+
+     _-----_
+    |       |
+    |--(o)--|    .---------------------------.
+   `---------´   |    Welcome to Yeoman,   |
+    ( _´U`_ )   |   ladies and gentlemen!  |
+    /___A___\   '_________________________'
+     |  ~  |
+   __'.___.'__
+ ´   `  |° ´ Y `
+
+Out of the box I include HTML5 Boilerplate, jQuery and Modernizr.
+Would you like to include Twitter Bootstrap for Sass? (Y/n)
+Would you like to include RequireJS (for AMD support)? (Y/n)
+   create Gruntfile.js
+   create package.json
+   ...
+   create     test/lib/mocha/mocha.js
+   create     test/spec/test.js
+
+I m all done. Just run npm install && bower install to install the required dependencies.
+
+$ yo angular
+$ yo angular:controller
+$ yo play:model
+      </pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Bower</h2>
+    </hgroup>
+    <article class="smaller">
+      <pre class="prettyprint lang-sh" data-lang="shell">
+$ bower search zanimo
+Search results:
+
+  - zanimo git://github.com/peutetre/Zanimo.git
+
+      </pre>
+      <pre class="prettyprint lang-sh" data-lang="shell">
+$ bower install zanimo
+bower cloning git://github.com/peutetre/Zanimo.git
+bower caching git://github.com/peutetre/Zanimo.git
+bower fetching zanimo
+bower checking out zanimo#0.0.5
+bower copying /home/paul/.bower/cache/zanimo/ef7f2fbbe5b210c1cd3c6a977ef66843
+bower cloning git://github.com/kriskowal/q.git
+bower caching git://github.com/kriskowal/q.git
+bower fetching q
+bower checking out q#v0.9.3
+bower copying /home/paul/.bower/cache/q/31342087dd663a818f035ad7875662de
+bower installing zanimo#0.0.5
+bower installing q#0.9.3
+      </pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>component.json</h2>
+    </hgroup>
+    <article class="smaller">
+      <pre class="prettyprint lang-js" data-lang="json">
+{
+  <b>"name": "zanimo",</b>
+  <b>"version": "0.0.5",</b>
+  "readme": "README.md",
+  "main": "./dist/zanimo-0.0.5.js",
+  "ignore": [
+    ...
+  ],
+  <b>"dependencies": {
+    "q": "~0.9.2"
+  },</b>
+  "gitHead": "1526bf9fdc26adc6f29b3d71760875b6d4f2a863",
+  "_id": "zanimo@0.0.5",
+  "description": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/peutetre/Zanimo.git"
+  }
+}
+      </pre>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>Grunt</h2>
+    </hgroup>
+    <article>
+      <ul class="build">
+        <li>Grunt is lightweight -> <b>Gruntfile.js</b></li>
+        <li>It's all about plugins (a lot of plugins)</li>
+        <li>
+          Plugins give you tasks
+          <ul class="build">
+            <li>Move / Copy / Remove a directory</li>
+            <li>Compile LESS / SASS / Stylus / CoffeeScript / ...</li>
+            <li>Minify JavaScript and CSS files</li>
+            <li>Run tests</li>
+            <li>Watch your files</li>
+            <li>Install Bower dependencies</li>
+            <li>...</li>
+          </ul>
+        </li>
+        <li>You can configure those tasks</li>
+        <li>You can create tasks from tasks (beware of the infinite loop!)</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/logo-zen.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Killer features demo time</h2>
+    </hgroup>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <aside class="gdbar right"><img src="images/logo-zen.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>Thank You!</h2>
+      <h3>Now you can...</h3>
+      <ul>
+        <li>Ask questions</li>
+        <li>Send feedback</li>
+        <li>Give me food</li>
+      </ul>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+  <slide class="logoslide dark nobackground">
+    <article class="flexbox vcenter">
+      <span><img src="images/logo-zen-big.png"></span>
+    </article>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
