@@ -889,6 +889,11 @@ aside.gdbar {
   @include background-size(0% 100%);
   @include transition(all 0.5s ease-out 0.5s); /* Better to transition only on background-size, but not sure how to do that with the mixin. */
 
+  &.dark {
+    @include background(linear-gradient(left, $gray-4, $gray-4) no-repeat);
+    @include background-size(0% 100%);
+  }
+
   &.right {
     right: 0;
     left: -moz-initial;
